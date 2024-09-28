@@ -4,7 +4,7 @@ import streamlit as st
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\abhis\Downloads\diseases_2.xls")
+    df = pd.read_csv(r"diseases_2.xls")
     df.drop('Unnamed: 0', axis=1, inplace=True)
     return df
 
